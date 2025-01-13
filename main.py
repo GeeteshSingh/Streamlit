@@ -78,7 +78,7 @@ def initialize_image_client():
 
 
 def generate_image(description, client):
-    comic_style_description = (f"{description.strip()}, in 2D comic style, cartoon-like, vibrant colors, and minimal "
+    comic_style_description = (f"{description.strip()}, in 2D comic style, cartoon-like, vibrant colors, keeping same on every new required image, and minimal "
                                f"shading")
     return client.text_to_image(comic_style_description)
 
