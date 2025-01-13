@@ -3,16 +3,11 @@ from huggingface_hub import InferenceClient
 from dotenv import load_dotenv
 import os
 
-genai_api_key = st.secrets["genai"]["api_key"]
-huggingface_api_key = st.secrets["huggingface"]["api_key"]
-
-# Use the API keys as needed
-
 
 # Loading env
 load_dotenv()
 HUGGINGFACE_API_KEY = os.getenv("HUGGINGFACE_API_KEY")
-HUGGINGFACE_API_KEY = st.secrets["huggingface"]["api_key"]
+
 
 def initialize_image_client():
     return InferenceClient(

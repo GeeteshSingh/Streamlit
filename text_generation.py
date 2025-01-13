@@ -3,14 +3,8 @@ import google.generativeai as genai
 from dotenv import load_dotenv
 import os
 
-genai_api_key = st.secrets["genai"]["api_key"]
-genai_api_key = st.secrets["genai"]["api_key"]
-
-# Use the API keys as needed
-
 load_dotenv()  # Loading env
 GENAI_API_KEY = os.getenv("GENAI_API_KEY")
-GENAI_API_KEY = st.secrets["genai"]["api_key"]
 
 
 def initialize_text_model():
